@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.homepage{
+    padding: 0 21px;
+  
+    &-title{
+        text-align: center;
+    }
+    &-card{
+        border-radius: 5%;
+        width: 200px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        overflow: hidden;
+        img{
+            width: 200px;
+        }
+        
+           p{
+            padding: 8px 12px;
+            height: 7em; /* altura máxima de 6 linhas */
+            text-align: justify;
+            word-break: break-all;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp:5; /* número de linhas que deseja limitar */
+            -webkit-box-orient: vertical;
+        }
+          &-title{
+            margin-top: 5px;
+            text-align: center;
+          }
+          &-desc{
+            padding: 2px 0px;
+          }
+    }
+}
+.flex-center{
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
